@@ -9,23 +9,9 @@
 [一键脚本](https://raw.githubusercontent.com/qza666/share/main/share.sh)
 
 #### 使用方法
-
-1. **下载脚本**
-
-   在服务器上下载并设置脚本的可执行权限：
-
-   ```bash
-   wget https://raw.githubusercontent.com/qza666/share/main/share.sh -O /root/share.sh
-   chmod +x /root/share.sh
-   ```
-
-2. **运行脚本**
-
-   直接执行脚本：
-
-   ```bash
-   /root/share.sh
-   ```
+```
+bash <(curl -Ls https://raw.githubusercontent.com/qza666/share/main/share.sh)
+```
 
 #### 功能说明
 
@@ -43,30 +29,4 @@
 请输入数字选择功能:
 ```
 
-**功能详情：**
-
-1. **重启**：重启服务容器。
-2. **停止**：停止服务容器。
-3. **启动**：启动服务容器。
-4. **升级**：升级服务容器。
-5. **查看日志**：查看服务容器的日志。
-6. **安装**：安装并配置服务，包括设置反向代理和修改前端页面。
-7. **退出**：退出脚本。
-
-#### 脚本内容
-
-```bash
-#!/bin/bash
-
-# Function to display menu
-show_menu() {
-    echo "请选择要执行的功能:"
-    echo "1) 重启"
-    echo "2) 停止"
-    echo "3) 启动"
-    echo "4) 升级"
-    echo "5) 查看日志"
-    echo "6) 安装"
-    echo "7) 退出"
-}
 
